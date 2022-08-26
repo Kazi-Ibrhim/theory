@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    font-size: 15px;
+}
+/* common classes  */
+.flex-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.my-btn{
+    color: #fff;
+    display: inline-block;
+    background-color: #5385c1;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 0.3rem;
+}
+.container{
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 0.5%;
+}
+.flex-box{
+    display:flex ;
+    flex-wrap: wrap;
+}
+/* section one */
+.big-img{
+    width: 100%;
+    min-height: 70%;
+    background-image: url(../img/dd.jpg);
+    background-size:cover ;
+    text-align: center;
+    border-top: 10px solid #5385c1;
+}
+.big-img nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem ;
+}
+nav .logo{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8rem;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+nav ul li{
+    padding-left: 2.7rem;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+  .bannar{
+    margin-top: 9rem;
+}
+.container .bannar h1{
+    color: #fff;
+    font-size: 4rem;
+}
+.container .bannar p{
+    color: #fff;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+}
+/* section two */
+.three-sec{
+    padding: 5rem ;
+}
+.three-sec .box{
+    width: 30%;
+}
+.box{
+    border-right: 1px solid dimgray;
+}
+.last-box{
+    border-right: none;
+}
+.box h2{
+    font-size: 1.8rem;
+    color:#5385c1 ;
+}
+.box p{
+    font-size: 1.4rem;
+    margin: 2.5rem 0;
+}
+/* section three */
+.four-box{
+    background-color: #5385c1;
+    padding: 6rem ;
+    text-align: center;
+    color: #fff ;
+}
+  .para{
+    width: 100%;
+  }
+.container .para h1{
+    font-size: 3rem;
+    color: #fff;
+}
+.container .para h5{
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 1.5rem;
+}
+.intro{
+    justify-content: space-between;
+}
+.boxes{
+    width: 20%;
+    border: 1px solid #fff;
+    padding: 3rem 3rem;
+}
+.boxes img{
+    border-radius: 50%;
+    width: 100%;
+    display: block;
+}
+.container .boxes h1{
+    font-size: 1.7rem;
+    margin: 1rem 0;
+    color: #fff;
+}
+/* secton four*/
+.two-box{
+    padding:4rem;
+}
+.big-sec{
+    justify-content: space-between;
+    width: 100%;
+}
+.viwe{
+    width: 46%;
+}
+.header{
+    width: 100%;
+}
+.container .header h1{
+    text-align: center;
+    color: #5385c1;
+    font-size: 3.5rem;
+}
+.container .header h5{
+    text-align: center;
+    color: dimgray;
+    margin: 1.5rem 0;
+    font-size: 1rem;
+}
+.viwe h2{
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+}
+.viwe p{
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+}
+.viwe img{
+    width: 100%;
+    display: block;
+}
+/* section five */
+.last-section{
+    justify-content: space-between;
+    border-top: 1px solid dimgray;
+    padding: 2rem ;
+}
+.last-section p{
+    font-size: 1.2rem;
+}.last-section p span{
+    color: #5385c1;
+}
+.last-section .link a{
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    color: #5385c1;
+}
+
+
+/* midea quries start here */
+
+@media only screen and ( max-width:1300px){
+    html{
+        font-size: 10px;
+    }
+    .container{
+        max-width: 625px;
+        margin: 0 auto;
+        padding: 0.5%;
+    }
+    }
+    @media only screen and ( max-width:850px){
+        
+        .three-main{
+            flex-direction: column;
+           
+        }
+        .three-sec .box{
+            width: 100%;
+            padding: 1rem;
+        
+        }
+        .box{
+            border-bottom: 1px solid dimgray;
+            border-right: none;
+        }
+
+    }
+    @media only screen and ( max-width:800px){
+        .boxes{
+            width: 46%;
+           margin-top: 3rem;
+        }
+    }
+    @media only screen and ( max-width:500px){
+        .viwe{
+            width: 100%;
+            margin-top: 2rem;
+        }
+    }
+    @media only screen and ( max-width:360px){
+        .boxes{
+            width: 100%;
+           margin-top: 3rem;
+        }
+    }
